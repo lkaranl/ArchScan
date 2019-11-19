@@ -57,7 +57,7 @@ def Main_Window():
 	
 	LBL_Porta_Lista = Label(Main,text = 'Portas',font = FONT1,bg = 'white',fg = 'red').place(x = 10,y = 100)
 	LBL_Linha_Porta = Label(Main,width = 90,bg = 'red').place(x = 0, y = 125,height = 0)
-	LBL_Developers = Label(Main,text = 'Karan | Douglas | Hevelyn',bg = 'white', fg = 'red',font = ("Verdana",6,"bold"))
+	LBL_Developers = Label(Main,text = 'Karan Luciano | Douglas',bg = 'white', fg = 'red',font = ("Verdana",6,"bold"))
 	LBL_Developers.place(x = 300, y = 115)
 
 
