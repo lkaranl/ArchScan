@@ -1,0 +1,23 @@
+[package]
+name = "archscan"
+version = "0.1.0"
+edition = "2021"
+authors = ["Karan Luciano", "Douglas"]
+description = "Scanner de Portas TCP/UDP — Reescrito em Rust"
+
+[[bin]]
+name = "archscan"
+path = "src/main.rs"
+
+[dependencies]
+tokio          = { version = "1",    features = ["full"] }
+eframe         = { version = "0.29", features = ["default"] }
+egui           = "0.29"
+socket2        = { version = "0.5",  features = ["all"] }
+futures        = "0.3"
+
+[profile.release]
+opt-level     = 3
+lto           = true
+codegen-units = 1
+strip         = true
